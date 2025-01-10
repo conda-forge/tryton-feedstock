@@ -1,6 +1,6 @@
 context:
   name: tryton
-  version: 5.0.33
+  version: 3.6.7
 
 package:
   name: ${{ name }}
@@ -8,20 +8,20 @@ package:
 
 source:
   url: https://github.com/tryton/tryton/archive/refs/tags/tryton-${{ version }}.tar.gz
-  sha256: c161a97bf9e0ee054d2289330a7b807190494c18fd7c073702c48c71f70a77e6
+  sha256: aa6aade3e5b6d808ee69d2af537d359372670153faa2b8ba6c3a7469271bf024
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7,<3.8
+    - python >=2.7,<2.8
     - setuptools
   run:
-    - python >=3.7,<3.8
+    - python >=2.7,<2.8
     - cairo >=1.16,<1.17
     - python-dateutil
     - pygobject <=3.44,<3.45
