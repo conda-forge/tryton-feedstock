@@ -34,6 +34,8 @@ requirements:
     - librsvg
 
 tests:
+  - script:
+    - tryton --version
   - python:
       imports:
         - tryton
