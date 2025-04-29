@@ -1,6 +1,6 @@
 context:
   name: tryton
-  version: "7.4.4"
+  version: "7.6.0"
 
 package:
   name: ${{ name }}
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://github.com/tryton/tryton/archive/refs/tags/tryton-${{ version }}.tar.gz
-  sha256: 33777c568a697ff0a9e837da608b4546825926ce028580e18e32a5a79b7d47e3
+  sha256: af1a2021dbea4564de7cf30136571555f4b651a6087740cf6e4479fd3f80181e
   patches:
     - patches/python313.patch
     - patches/entry_points.patch
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install ./tryton --no-deps -vv
 
