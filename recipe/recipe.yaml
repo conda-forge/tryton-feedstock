@@ -1,6 +1,6 @@
 context:
   name: tryton
-  version: "7.6.2"
+  version: "7.8.0"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/tryton/tryton/archive/refs/tags/tryton-${{ version }}.tar.gz
-  sha256: 5e946946ae83634ce30280adf151b90ed04df78ccc0f6d8c4c1f3ff226f35b4f
+  sha256: ad8e0c0db863f6b71ed11c7a873bf92085d9052c57736688e3c754d627880452
   patches:
     - patches/entry_points.patch
 
