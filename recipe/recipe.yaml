@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/tryton/tryton/archive/refs/tags/tryton-${{ version }}.tar.gz
-  sha256: c161a97bf9e0ee054d2289330a7b807190494c18fd7c073702c48c71f70a77e6
+  sha256: 780e4ea16025b92f2685970ddee20c948d40b65b7bb04701098777cd83119d47
   patches:
     - patches/entry_points.patch
 
