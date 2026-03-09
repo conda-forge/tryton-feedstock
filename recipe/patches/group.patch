@@ -1,0 +1,13 @@
+diff --git a/tryton/tryton/gui/window/view_form/model/group.py b/tryton/tryton/gui/window/view_form/model/group.py
+index f125620fb5..5ffbb6b226 100644
+--- a/tryton/tryton/gui/window/view_form/model/group.py
++++ b/tryton/tryton/gui/window/view_form/model/group.py
+@@ -345,7 +345,7 @@ class Group(list):
+             cmp = operator.gt
+         else:
+             cmp = operator.lt
+-        max_id = max(0, *(r.id for r in self))
++        max_id = max([r.id for r in self], default=0)
+         for record in self:
+             # Assume not loaded records are correctly ordered
+             # as far as we do not change any previous records.
