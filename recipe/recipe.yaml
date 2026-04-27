@@ -10,7 +10,7 @@ source:
   url: https://github.com/tryton/tryton/archive/refs/tags/tryton-${{ version }}.tar.gz
   sha256: e7d7cd57107b3247f91ed7aeb2ed2e913757a4a472791e2aba76a05142d97df1
   patches:
-    - patches/entry_points.patch
+    # - patches/entry_points.patch
     - patches/group.patch
 
 build:
